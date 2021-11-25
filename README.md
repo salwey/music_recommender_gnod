@@ -5,6 +5,7 @@
 **Goal:** Take a song and artist provided by the user, if this song is found within the Billboard Top 100 return another song from this top 100, if it is not found. We use spotipy API to gather audio features to suggest a similar song based on a list of tracks we have applied a clustering to and built a machine learning model from so we can apply the model to the users song's audio features and with that find a song to recommend from the same cluster within our list.
 
 
+## File Overview
 - music_recommender.ipynb : jupyter notebook for the project, sections: 
   - Billboard 100 - (get list of 100 tracks by web scraping Billboard Top 100)
   - Spotipy (get large list of tracks with audio features, gets a unique list of artists from 5 playlists and gets 10 songs for each artist ~3500 tracks info)
